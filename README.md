@@ -1,5 +1,7 @@
 # Bash script to check system resources.
 
+![image](https://user-images.githubusercontent.com/117186369/213873662-3666d489-dfc9-48f2-99c0-d6c5a6d6ef88.png)
+
 #!/bin/bash
 
 ### Store the current date and time in a variable
@@ -38,3 +40,7 @@ The line used_memory=$(free -m | awk 'NR==2{print $3}') uses the free -m command
 The next line echo "$current_time, $load, $free_memory MB free, $used_memory MB used" prints the current date and time, system load, and memory usage.
 
 The last line echo "$current_time, $load, $free_memory MB free, $used_memory MB used" >> /var/log/system_monitor.log uses the echo command to append the same data to a log file located at /logs/system_resources.log
+
+![image](https://user-images.githubusercontent.com/117186369/213873700-1cfc1c0c-d9ad-4434-a50d-b4cf507b43d5.png)
+
+### Inside the system_resources.log file.
